@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation2"
+    app:startDestination="@id/userfragment1">
+
+    <fragment
+        android:id="@+id/userfragment1"
+        android:name="com.example.zaali.userprofileFragments.userfragment1"
+        tools:layout="@layout/userfragment1"
+        android:label="userfragment1" >
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/fragment22"
+        android:name="com.example.zaali.pragments.fragment2"
+        tools:layout="@layout/userfragment2"
+        android:label="fragment2" />
+    <fragment
+        android:id="@+id/userfragment3"
+        android:name="com.example.zaali.userprofileFragments.userfragment3"
+        tools:layout="@layout/userfragment3"
+        android:label="userfragment3" />
+
+
+</navigation>
