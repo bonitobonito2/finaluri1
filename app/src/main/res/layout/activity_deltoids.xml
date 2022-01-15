@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".bicebsactivity">
+    tools:context=".deltoidsActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,12 +17,12 @@
             android:textStyle="bold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="middle bicebs workout"
+            android:text="middle trapezius workout"
             />
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="350dp"
-            android:src="@drawable/img_6"
+            android:src="@drawable/img_11"
             />
         <TextView
             android:layout_margin="2dp"
@@ -29,12 +30,12 @@
             android:textStyle="bold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="upper bicebs workout"
+            android:text="upper trapezius workout"
             />
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="350dp"
-            android:src="@drawable/img_7"
+            android:src="@drawable/img_12"
             />
 
         <TextView
@@ -43,15 +44,15 @@
             android:textStyle="bold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="lower bicebs workout"
+            android:text="lower trapezius workout"
             />
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="350dp"
-            android:src="@drawable/img_8"
+            android:src="@drawable/img_13"
             />
         <Button
-            android:id="@+id/eddtofavoritesChest2"
+            android:id="@+id/eddtofavoritesChest5"
             android:backgroundTint="#2ACD30"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -59,6 +60,5 @@
             />
 
     </LinearLayout>
-
 
 </ScrollView>

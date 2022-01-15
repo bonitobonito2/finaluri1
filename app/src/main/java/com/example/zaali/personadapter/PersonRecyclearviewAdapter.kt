@@ -25,11 +25,11 @@ import java.security.AccessController.getContext
 class PersonRecyclearviewAdapter(private val list:List<person>): RecyclerView.Adapter<PersonRecyclearviewAdapter.PersonViewHolder>()  {
     class PersonViewHolder(itemView:View) : RecyclerView.ViewHolder(itemView){
         val imageView:ImageView
-        val textView: TextView
+
         val meore: TextView
         init{
             imageView = itemView.findViewById(R.id.imageView)
-            textView = itemView.findViewById(R.id.review)
+
             meore= itemView.findViewById(R.id.nameofmuscule)
 
 
@@ -42,7 +42,7 @@ class PersonRecyclearviewAdapter(private val list:List<person>): RecyclerView.Ad
                 .load(person.imageurl)
                 .centerCrop()
                 .into(imageView)
-            textView.text = "review"
+
             meore.text = person.name
             itemView.setOnClickListener { v:View->
                 if (meore.text=="chest"){
@@ -62,6 +62,16 @@ class PersonRecyclearviewAdapter(private val list:List<person>): RecyclerView.Ad
                 }
                 if (meore.text=="triceps"){
                     val intent = Intent(itemView.context,tricebstivity::class.java)
+                    itemView.context.startActivity(intent)
+
+                }
+                if (meore.text=="deltoids"){
+                val intent = Intent(itemView.context,deltoidsActivity::class.java)
+                itemView.context.startActivity(intent)
+
+            }
+                if (meore.text=="trapezius"){
+                    val intent = Intent(itemView.context,trapeziusActivity::class.java)
                     itemView.context.startActivity(intent)
 
                 }

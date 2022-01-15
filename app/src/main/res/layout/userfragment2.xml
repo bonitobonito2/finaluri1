@@ -1,12 +1,154 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
     >
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="dasdas"
-        />
-</LinearLayout>
+        android:orientation="vertical"
+        android:id="@+id/liner"
+
+        >
+        <ImageView
+            android:layout_width="200dp"
+            android:id="@+id/photo"
+            android:layout_height="200dp"
+            android:visibility="gone"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/musculename"
+            android:visibility="gone"
+
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/removebutton"
+            android:text="remove"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:id="@+id/photo1"
+            android:layout_height="200dp"
+            android:visibility="gone"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/musculename1"
+            android:visibility="gone"
+
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/removebutton1"
+            android:text="remove"
+            android:visibility="gone"
+
+
+            />
+
+<!--bicebs-->
+        <ImageView
+            android:layout_width="200dp"
+            android:id="@+id/photo2"
+            android:layout_height="200dp"
+            android:visibility="gone"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/musculename2"
+            android:visibility="gone"
+
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/removebutton2"
+            android:text="remove"
+            android:visibility="gone"
+
+
+            />
+<!--        tricebs-->
+        <ImageView
+            android:layout_width="200dp"
+            android:id="@+id/photo3"
+            android:layout_height="200dp"
+            android:visibility="gone"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/musculename3"
+            android:visibility="gone"
+
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/removebutton3"
+            android:text="remove"
+            android:visibility="gone"
+
+
+            />
+<!--trapezius-->
+        <ImageView
+            android:layout_width="200dp"
+            android:id="@+id/photo4"
+            android:layout_height="200dp"
+            android:visibility="gone"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/musculename4"
+            android:visibility="gone"
+
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/removebutton4"
+            android:text="remove"
+            android:visibility="gone"
+
+
+            />
+<!--        deltoids-->
+        <ImageView
+            android:layout_width="200dp"
+            android:id="@+id/photo5"
+            android:layout_height="200dp"
+            android:visibility="gone"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/musculename5"
+            android:visibility="gone"
+
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/removebutton5"
+            android:text="remove"
+            android:visibility="gone"
+
+
+            />
+
+    </LinearLayout>
+
+
+</ScrollView>

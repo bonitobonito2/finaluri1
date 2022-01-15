@@ -24,10 +24,10 @@ class MainActivity2 : AppCompatActivity() {
 
         TabLayoutMediator(toppager,viewPager){tab,position->
             if (position ==0){
-                tab.text="home"
+                tab.text="body parts"
             }
             if (position==1){
-                tab.text="search"
+                tab.text="favorites"
             }
             if (position==2){
                 tab.text="profile"

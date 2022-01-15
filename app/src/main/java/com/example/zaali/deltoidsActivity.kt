@@ -8,17 +8,18 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
-class chestactivity : AppCompatActivity() {
+class deltoidsActivity : AppCompatActivity() {
     private val db: DatabaseReference = FirebaseDatabase.getInstance().getReference("userinfo2")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_chestactivity)
-        var btn = findViewById<Button>(R.id.eddtofavoritesChest)
+        setContentView(R.layout.activity_deltoids)
+        var btn = findViewById<Button>(R.id.eddtofavoritesChest5)
 
         btn.setOnClickListener {
-            var info = addfavorites("chest","https://www.bodybuilding.com/images/2017/december/built-by-science-article-graphics-chest-1-700xh.jpg")
-            db.child(FirebaseAuth.getInstance().currentUser?.uid!!).child("chest").setValue(info)
-            Toast.makeText(this, "chest added to favorites", Toast.LENGTH_SHORT).show()
+            var info = addfavorites("deltoids","https://images.squarespace-cdn.com/content/v1/5ebef943272c1041d83b1d15/1590177449617-S0FV8E560EHBBFFVNYZO/Anterior+Deltoid+Muscle?format=500w")
+            db.child(FirebaseAuth.getInstance().currentUser?.uid!!).child("deltoids").setValue(info)
+            Toast.makeText(this, "deltoids added to favorites", Toast.LENGTH_SHORT).show()
         }
+
     }
 }

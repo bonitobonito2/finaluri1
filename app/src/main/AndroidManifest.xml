@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Zaali">
         <activity
+            android:name=".deltoidsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".trapeziusActivity"
+            android:exported="false" />
+        <activity
             android:name=".bicebsactivity"
             android:exported="false" />
         <activity

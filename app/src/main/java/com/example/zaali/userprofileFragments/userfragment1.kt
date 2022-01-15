@@ -38,7 +38,7 @@ class userfragment1:Fragment(R.layout.userfragment1) {
         val List = ArrayList<person>()
         List.add(
            person(
-               "chest","add to favorites","https://www.bodybuilding.com/images/2017/december/built-by-science-article-graphics-chest-1-700xh.jpg"
+               "chest","chest is one of the largest muscule in our body","https://www.bodybuilding.com/images/2017/december/built-by-science-article-graphics-chest-1-700xh.jpg"
 
            )
         )
@@ -75,14 +75,7 @@ class userfragment1:Fragment(R.layout.userfragment1) {
 
 
         )
-        List.add(
-            person(
-                "legs","add to favorites","https://image.freepik.com/free-vector/leg-muscle-anatomy-front-view_1308-47389.jpg"
 
-            )
-
-
-        )
 
 
 return List

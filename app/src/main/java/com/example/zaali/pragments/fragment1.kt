@@ -28,7 +28,7 @@ class fragment1: Fragment(R.layout.fragment1) {
         var password = view.findViewById<TextView>(R.id.password1)
         var btnsignin = view.findViewById<Button>(R.id.signin)
         btnsignup.setOnClickListener {
-            findNavController().navigate(R.id.action_fragment2_to_fragment1)
+            findNavController().navigate(R.id.action_fragment1_to_fragment2)
 
         }
 
