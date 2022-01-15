@@ -1,5 +1,6 @@
 package com.example.zaali
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -19,6 +20,8 @@ class deltoidsActivity : AppCompatActivity() {
             var info = addfavorites("deltoids","https://images.squarespace-cdn.com/content/v1/5ebef943272c1041d83b1d15/1590177449617-S0FV8E560EHBBFFVNYZO/Anterior+Deltoid+Muscle?format=500w")
             db.child(FirebaseAuth.getInstance().currentUser?.uid!!).child("deltoids").setValue(info)
             Toast.makeText(this, "deltoids added to favorites", Toast.LENGTH_SHORT).show()
+            var intent = Intent(this,MainActivity2::class.java)
+            startActivity(intent)
         }
 
     }

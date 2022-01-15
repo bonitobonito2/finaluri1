@@ -27,12 +27,17 @@ class fragment1: Fragment(R.layout.fragment1) {
         var email = view.findViewById<TextView>(R.id.email1)
         var password = view.findViewById<TextView>(R.id.password1)
         var btnsignin = view.findViewById<Button>(R.id.signin)
+        var forgotpassword=  view.findViewById<Button>(R.id.forgotpassword)
         btnsignup.setOnClickListener {
             findNavController().navigate(R.id.action_fragment1_to_fragment2)
 
         }
 
         btnsignin.setOnClickListener {
+            if(email.text.toString().isEmpty() or password.text.toString().isEmpty()){
+                Toast.makeText(activity, "email or password is empty", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
            var emailvalue = email.text.toString()
            var passwordvalue = password.text.toString()
            FirebaseAuth.getInstance()
@@ -46,6 +51,9 @@ class fragment1: Fragment(R.layout.fragment1) {
                    }
 
                }
+        }
+        forgotpassword.setOnClickListener {
+            findNavController().navigate(R.id.action_fragment1_to_fragment3)
         }
     }
 }

@@ -1,5 +1,6 @@
 package com.example.zaali
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -20,6 +21,8 @@ class backactivity : AppCompatActivity() {
             var info = addfavorites("back","https://ix-cdn.b2e5.com/images/41628/41628_4d7bcffa446f416f8542fee1625260d0_1616757894.jpeg")
             db.child(FirebaseAuth.getInstance().currentUser?.uid!!).child("back").setValue(info)
             Toast.makeText(this, "back added to favorites", Toast.LENGTH_SHORT).show()
+            var intent = Intent(this,MainActivity2::class.java)
+            startActivity(intent)
         }
 
     }

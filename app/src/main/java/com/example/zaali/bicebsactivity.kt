@@ -1,5 +1,6 @@
 package com.example.zaali
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -18,6 +19,8 @@ class bicebsactivity : AppCompatActivity() {
             var info = addfavorites("bicebs","https://iaom-us.com/wp-content/uploads/2018/11/Fotolia_110740333_S-693x675.jpg")
             db.child(FirebaseAuth.getInstance().currentUser?.uid!!).child("bicebs").setValue(info)
             Toast.makeText(this, "bicebs added to favorites", Toast.LENGTH_SHORT).show()
+            var intent =Intent(this,MainActivity2::class.java)
+            startActivity(intent)
         }
     }
 }

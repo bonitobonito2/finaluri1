@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_fragment1_to_fragment2"
             app:destination="@id/fragment2" />
+        <action
+            android:id="@+id/action_fragment1_to_fragment3"
+            app:destination="@id/fragment3" />
     </fragment>
     <fragment
         android:id="@+id/fragment2"
@@ -21,6 +24,15 @@
         tools:layout="@layout/fragment2">
         <action
             android:id="@+id/action_fragment2_to_fragment1"
+            app:destination="@id/fragment1" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment3"
+        android:name="com.example.zaali.pragments.fragment3"
+        tools:layout="@layout/changepasswordfragment"
+        android:label="fragment3" >
+        <action
+            android:id="@+id/action_fragment3_to_fragment1"
             app:destination="@id/fragment1" />
     </fragment>
 </navigation>

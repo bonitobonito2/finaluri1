@@ -24,12 +24,20 @@ class fragment2:Fragment(R.layout.fragment2) {
         var photourl = view.findViewById<EditText>(R.id.photourl)
         var btn = view.findViewById<Button>(R.id.signup2)
         btn.setOnClickListener {
-            var email1 = email.text.toString()
-            var password1 = password.text.toString()
-            var name1 = name.text.toString()
-            var lastname1 = lastname.text.toString()
-            var  photourl1 = photourl.text.toString()
-            var useInfo = userinfo(name1,lastname1,photourl1)
+            if(email.text.toString().isEmpty() or password.text.toString().isEmpty()){
+                Toast.makeText(activity, "email or password is empty", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+                var email1 = email.text.toString()
+                var password1 = password.text.toString()
+                var name1 = name.text.toString()
+                var lastname1 = lastname.text.toString()
+                var  photourl1 = photourl.text.toString()
+                var useInfo = userinfo(name1,lastname1,photourl1)
+
+
+
+
             FirebaseAuth.getInstance()
                 .createUserWithEmailAndPassword(email1,password1)
                 .addOnCompleteListener{task->

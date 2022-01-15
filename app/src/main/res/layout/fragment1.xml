@@ -40,6 +40,12 @@
             android:layout_height="wrap_content"
             android:text="dont have a account yet? signup"
             />
+        <Button
+            android:id="@+id/forgotpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="forgot password? click here"
+            />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

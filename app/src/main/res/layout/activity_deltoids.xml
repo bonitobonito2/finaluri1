@@ -17,12 +17,12 @@
             android:textStyle="bold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="middle trapezius workout"
+            android:text="middle deltoids workout"
             />
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="350dp"
-            android:src="@drawable/img_11"
+            android:src="@drawable/img_14"
             />
         <TextView
             android:layout_margin="2dp"
@@ -30,12 +30,12 @@
             android:textStyle="bold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="upper trapezius workout"
+            android:text="upper deltoids workout"
             />
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="350dp"
-            android:src="@drawable/img_12"
+            android:src="@drawable/img_16"
             />
 
         <TextView
@@ -44,12 +44,12 @@
             android:textStyle="bold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="lower trapezius workout"
+            android:text="back deltoids workout"
             />
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="350dp"
-            android:src="@drawable/img_13"
+            android:src="@drawable/img_15"
             />
         <Button
             android:id="@+id/eddtofavoritesChest5"

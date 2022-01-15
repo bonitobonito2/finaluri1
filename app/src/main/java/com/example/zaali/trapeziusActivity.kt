@@ -1,5 +1,6 @@
 package com.example.zaali
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -19,6 +20,8 @@ class trapeziusActivity : AppCompatActivity() {
             var info = addfavorites("trapezius","https://images.immediate.co.uk/production/volatile/sites/34/2021/05/Trapezius-stretches-d9d0383.jpg?quality=90&resize=620%2C413")
             db.child(FirebaseAuth.getInstance().currentUser?.uid!!).child("trapezius").setValue(info)
             Toast.makeText(this, "trapezius added to favorites", Toast.LENGTH_SHORT).show()
+            var intent = Intent(this,MainActivity2::class.java)
+            startActivity(intent)
         }
     }
 }
