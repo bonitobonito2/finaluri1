@@ -18,10 +18,7 @@ import org.w3c.dom.Text
 
 class fragment1: Fragment(R.layout.fragment1) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        if(FirebaseAuth.getInstance().currentUser !=null ) {
-            var intent = Intent(getActivity(), MainActivity2::class.java)
-            startActivity(intent)
-        }
+      
         super.onViewCreated(view, savedInstanceState)
         var btnsignup = view.findViewById<Button>(R.id.btn)
         var email = view.findViewById<TextView>(R.id.email1)
